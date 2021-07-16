@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Challenge_Stack_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VJp-ry-yDC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Barbell" translatesAutoresizingMaskIntoConstraints="NO" id="xHE-HE-7I5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="298.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beach" translatesAutoresizingMaskIntoConstraints="NO" id="DDc-gn-LXA">
+                                        <rect key="frame" x="0.0" y="298.5" width="414" height="299"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Running" translatesAutoresizingMaskIntoConstraints="NO" id="MC8-8W-MvL">
+                                        <rect key="frame" x="0.0" y="597.5" width="414" height="298.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qGJ-2G-9dh" userLabel="V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FITNESS WITH FRIENDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brS-Ia-JPf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="brS-Ia-JPf" secondAttribute="trailing" id="7bz-5r-wYX"/>
+                                    <constraint firstItem="brS-Ia-JPf" firstAttribute="top" secondItem="qGJ-2G-9dh" secondAttribute="top" id="VYU-nn-yRw"/>
+                                    <constraint firstItem="brS-Ia-JPf" firstAttribute="leading" secondItem="qGJ-2G-9dh" secondAttribute="leading" id="iBt-zy-rjR"/>
+                                    <constraint firstAttribute="bottom" secondItem="brS-Ia-JPf" secondAttribute="bottom" id="iwq-Bz-KaX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qGJ-2G-9dh" secondAttribute="trailing" id="1YI-pZ-Lp1"/>
+                            <constraint firstAttribute="bottom" secondItem="qGJ-2G-9dh" secondAttribute="bottom" constant="800" id="2Aq-1u-GkY"/>
+                            <constraint firstAttribute="trailing" secondItem="VJp-ry-yDC" secondAttribute="trailing" id="AIh-qW-82F"/>
+                            <constraint firstItem="qGJ-2G-9dh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LtO-ds-Cmi"/>
+                            <constraint firstAttribute="bottom" secondItem="VJp-ry-yDC" secondAttribute="bottom" id="ay3-jF-KkM"/>
+                            <constraint firstItem="VJp-ry-yDC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ooG-Cf-bZc"/>
+                            <constraint firstItem="VJp-ry-yDC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="t7U-aG-bkx"/>
+                            <constraint firstItem="qGJ-2G-9dh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wWc-mJ-taj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Barbell" width="413" height="230"/>
+        <image name="Beach" width="414" height="230"/>
+        <image name="Running" width="414" height="230"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
